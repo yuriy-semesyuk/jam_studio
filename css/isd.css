@@ -1,0 +1,56 @@
+html {
+    display: flex;
+    justify-content: center;
+}
+
+.servisnews {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+    background-color: red;
+    margin: 0;
+
+}
+.cosmetic {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    background-color: whitesmoke;
+    margin: 2%;
+}
+
+.blouks {
+    display: flex;
+    background-color: whitesmoke;
+    margin: 2%;
+}
+
+
+#servis {
+    display: flex;
+    width: 60%;
+    flex-flow: column;
+}
+#servis.servissection {
+    display: flex;
+    flex-direction: row;
+}
+
+.servissection {
+    display: flex;
+    flex-flow: column;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0;
+}
+
+
+label {
+    display: flex;
+    justify-content: center;
+    background-color: gold;
+}
+
+article {
+    display: flex;
+}
