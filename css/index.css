@@ -2,8 +2,8 @@ html {
     display: flex;
     justify-content: center;
     margin: auto;
-    max-width: 767px;
-    height: 5000px;
+    max-width: 1024px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -21,60 +21,84 @@ nav {
     justify-content: space-around;
     max-width: 100%;
 }
-img {
+main {
+    display: grid;
+}
+#servis_and_news {
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: 1fr 40%;
+    grid-template-rows: 1fr;
+}
+label {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+.img_for_service {
     max-width: 100%;
     max-height: 100%;
     display: flex;
     justify-content: center;
 }
-main {
-    display: grid;
-}
-#servis {
-    background-color: darkgray;
-    margin-right: 5px;
-}
-#news {
-    background-color: darkgray;
-}
-#servis_and_news {
-    display: grid;
-    grid-auto-rows: max-content;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-}
-#products {
-    grid-column-end: span 2;
-    background-color: darkgray;
-    margin-top: 5px;
-}
-label {
-    display: flex;
-    justify-content: center;
-    background-color: darkgray;
-
-}
-article {
+#article_for_servis {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
 }
-
-section {
+.section_servis {
     display: grid;
     grid-template: 1fr/1fr;
     margin: 5px;
-    color: white;
-    background-color: gray;
+    background-color: whitesmoke;
 }
-h3 {
+.section_servis {
+    display: flex;
+    flex-direction: column;
+}
+.img_for_news {
+    max-width: 150px;
+    max-height: 150px;
+}
+#article_for_news {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.section_news {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 5px;
+    background-color: whitesmoke;
+}
+#products {
+    grid-column-end: span 2;
+    background-color: white;
+    margin-top: 5px;
+}
+.img_for_service {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#article_for_products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.section_products {
+    display: grid;
+    grid-template: 1fr/1fr;
+    margin: 5px;
+    background-color: whitesmoke;
+}
+.section_products {
+    display: flex;
+    flex-direction: column;
+}
+p {
     display: flex;
     justify-content: center;
     margin: 0;
 }
 h2 {
     margin: auto;
-}
-section {
-    display: flex;
-    flex-direction: column;
 }
