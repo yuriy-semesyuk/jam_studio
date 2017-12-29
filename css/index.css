@@ -3,18 +3,23 @@ html {
     justify-content: center;
     margin: auto;
     max-width: 1024px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 header {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 nav {
     max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: #272727;
+}
+.nav {
+    color: white;
 }
 #jam_pictures {
     display: flex;
@@ -24,10 +29,10 @@ nav {
 #servis_and_news {
     display: grid;
     grid-auto-rows: max-content;
-    grid-template-columns: 1fr 40%;
+    grid-template-columns: 60% 1fr;
     grid-template-rows: 1fr;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     #servis_and_news {
         display: block;
     }
@@ -35,13 +40,11 @@ nav {
 label {
     display: flex;
     justify-content: center;
-    background-color: whitesmoke;
+    color: #1b1b1b;
+
 }
-.img_for_service {
-    max-width: 100%;
-    max-height: 100%;
-    display: flex;
-    justify-content: center;
+#servis {
+    background-color: #ffffff;
 }
 #article_for_servis {
     display: grid;
@@ -51,27 +54,27 @@ label {
     display: grid;
     grid-template: 1fr/1fr;
     margin: 5px;
-    background-color: whitesmoke;
 }
 .section_servis {
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
 }
-.img_for_news {
-    max-width: 100%;
-    max-height: 100%;
+#news {
+    margin-left: 20px;
+    background-color: #ffffff;
 }
 .section_news {
     display: grid;
-    grid-template-columns: 39% 1fr;
+    grid-template-columns: 40% 60%;
     grid-auto-rows: max-content;
-    margin: 5px;
-    background-color: whitesmoke;
+    margin: 15px auto;
+    background-color: #ffffff;
 }
 #products {
     grid-column-end: span 2;
-    background-color: white;
     margin-top: 5px;
+    background-color: #ffffff;
 }
 .img_for_service {
     display: grid;
@@ -87,17 +90,25 @@ label {
     display: grid;
     grid-template: 1fr/1fr;
     margin: 5px;
-    background-color: whitesmoke;
+
 }
 .section_products {
     display: flex;
     flex-direction: column;
 }
-p {
+h1 {
+    margin: auto;
     display: flex;
     justify-content: center;
-    margin: 0;
+    color: #272727;
 }
 h2 {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+p {
+    display: flex;
+    justify-content: flex-start;
+    color: #272727;
+    margin: 5px;
 }
