@@ -12,7 +12,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 nav {
     max-width: 100%;
@@ -44,11 +44,12 @@ nav {
 label {
     display: flex;
     justify-content: center;
-    color: #1b1b1b;
+    background: #272727;
 
 }
 #servis {
     max-width: 100%;
+    background: lavender;
 }
 .img_for_service {
     display: grid;
@@ -68,25 +69,29 @@ label {
 }
 .section_servis {
     display: grid;
+    grid-auto-columns: max-content;
     grid-template: 1fr/1fr;
     margin: 5px;
 }
-
+.section_servis {
+    display: flex;
+    flex-direction: column;
+}
 #news {
-    margin-left: 20px;
-    background-color: #ffffff;
+    margin-left: 10px;
+    background: lavender;
 }
 .section_news {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-auto-rows: max-content;
-    margin: 15px auto;
-    background-color: #ffffff;
+    margin: 5px auto;
+    padding: 5px;
 }
 #products {
     grid-column-end: span 2;
-    margin-top: 5px;
-    background-color: #ffffff;
+    margin-top: 10px;
+    background: lavender;
 }
 #article_for_products {
     display: grid;
@@ -112,7 +117,7 @@ h1 {
     margin: auto;
     display: flex;
     justify-content: center;
-    color: #272727;
+    color: white;
 }
 h2 {
     display: flex;
@@ -123,4 +128,9 @@ p {
     justify-content: flex-start;
     color: #272727;
     margin: 5px;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
