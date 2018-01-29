@@ -1,11 +1,22 @@
-function initMap() {
-    var uluru = {lat: 49.824474, lng: 24.0369003};
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
-        center: uluru
-    });
-    var marker = new google.maps.Marker({
-        position: uluru,
-        map: map
-    });
+$(function() {
+    $('#contact-form input[type=submit]').click(sendForm);
+});
+
+function sendForm(ev) {
+    const form  = document.getElementsByTagName('form')[0];
+    if (form.checkValidity()) {
+        ev.preventDefault();
+        $.ajax({
+            url: "https://formspree.io/yuriy.semesyuk@gmail.com",
+            method: "POST",
+            data: {
+                name: $('#name').val(),
+                email: $('#email').val(),
+                feedback: $('#feedback').val()
+            },
+            dataType: "json"
+        })
+            .done( () => $('#thank-dialog').attr('open', 'open') )
+    .fail( () => $('#error-dialog').attr('open', 'open') );
+    }
 }

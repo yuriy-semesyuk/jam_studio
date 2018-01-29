@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jam Studio</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
-        <img id="jam_pictures" src="img/jam_black_heder.jpg" rel="Jam hair studio">
         <nav>
             <h3 class="nav">Головна</h3>
             <h3 class="nav">Послуги</h3>
@@ -18,6 +18,7 @@
         </nav>
     </header>
     <main>
+        <img id="jam_pictures" src="img/jam_black_heder.jpg" rel="Jam hair studio">
         <div id="servis_and_news">
             <div id="servis">
                 <label>
@@ -52,23 +53,26 @@
                         <p> fasdfasdf. dasdasdqwwd  dwdqwdwq  wqdwdw  fasdfasdf. dasdasdqwwd  dwdqwdwq  wqdwdw
                             fasdfasdf. dasdasdqwwd  dqwdwq  wqdwdw</p>
                     </section>
+                    <hr>
                     <section class="section_news">
                         <img class="img_for_service" src="img/2.jpg" alt="Стрижки">
                         <p>dfsdfaf fdsfasfas dfasdf dsfa sdfasdf adsd. dfsaf.asd fasdfasdf. dasdasdqwwd  dwdqwdwq  wqdwdw
                             fasdfasdf. dasdasdqwwd  dwdqwdwq  wqdwdw  fasdfasdf. dasdasdqwwd  dwdqwdwq  wqdwdw</p>
                     </section>
+                    <hr>
                     <section class="section_news">
                         <img class="img_for_service" src="img/3.jpg" alt="Стрижки">
                         <p>eweweq eqweweqwd wqwdqdwd dqwdw fasdfasdf. dasdasdqwwd  dwdqwdwq  wqdwdw
                             fasdfasdf. dasdasdqwwd  dwdqwdw dasdasdqwwd  dwdqwdwq  wqdwdw</p>
                     </section>
+                    <hr>
                     <section class="section_news">
                         <img class="img_for_service" src="img/4.jpg" alt="Стрижки">
                         <p>wdqwdwdqwd dfsdfaf wdqwdwd dqwdwdqwdw dqwdwdddfasdfasdf. dasdasdqwwd  dwdqwdwq  wqdwdw
-                            fasdfasdf. dasdasdqw
+                            fasdfasdf. dasdasdqw</p>
+                    </section>
                 </article>
             </div>
-            </hr>
             <div id="products">
                 <label>
                     <h1>Продукція</h1>
@@ -93,24 +97,22 @@
                 </article>
             </div>
         </div>
-    </main>
-    <footer>
         <div id="contact_blok">
-            <article>
+            <article class="contact">
                 <label>
                     <h1>Адреса</h1>
                 </label>
-                <section>
+                <section id="for_adres">
                         <h3>м.Львів, Кубаньська 8</h3>
                     <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.982704053167!2d24.03701242589541!3d49.823990274102556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf10f7621b4bb66b8!2sJAM+hair+studio!5e0!3m2!1suk!2sua!4v1516816200017"></iframe>
                 </section>
             </article>
-            <div id="contact">
+            <div id="contact" class="contact">
                 <article>
                     <label>
                         <h1>Графік роботи</h1>
                     </label>
-                    <section>
+                    <section id="time_for_work">
                         <h3>Понеділок - Субота</h3>
                         <h3>10:00 - 20:00</h3>
                         <h3>Неділя: Вихідний</h3>
@@ -120,20 +122,43 @@
                     <label>
                         <h1>Контакти</h1>
                     </label>
-                        <h3>+38(063) 825 6848</h3>
-                        <section id="icon">
-                            <img src="img/icon/Instagram.png" alt="">
-                            <img src="img/icon/Facebook.png" alt="">
-                            <img src="img/icon/Gmail.png" alt="">
-                        </section>
+                    <h3>+38(063) 825 6848</h3>
+                    <hr>
+                    <section id="icon">
+                        <a href="https://www.instagram.com/jam.studio.lviv/"><img src="img/icon/Instagram.png" alt=""></a>
+                        <a href="https://www.facebook.com/JAM.studio.lviv/"><img src="img/icon/Facebook.png" alt=""></a>
+                    </section>
                 </article>
             </div>
-            <article>
+            <article class="contact">
                 <label>
                     <h1>Натишіть нам</h1>
                 </label>
+                <form id="contact-form">
+                    <label class="contact-form">Your name
+                        <input  type="text" id="name">
+                    </label>
+                    <br>
+                    <label class="contact-form">Your email
+                        <input type="email" id="email">
+                    </label>
+                    <br>
+                    <label class="contact-form">Your feedback
+                        <textarea id="feedback"></textarea>
+                    </label>
+                    <br>
+                    <input type="submit">
+                </form>
+                <dialog id="thank-dialog">
+                    <p>Thank you for contacting us!</p>
+                </dialog>
+                <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+                        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                        crossorigin="anonymous">
+                </script>
             </article>
         </div>
-    </footer>
+    </main>
+    <script src="js/index.js"></script>
 </body>
 </html>

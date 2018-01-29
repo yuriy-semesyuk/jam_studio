@@ -1,15 +1,8 @@
-html {
+main {
     margin: 0 auto;
     max-width: 1024px;
     min-width: 320px;
     font-family: 'Ubuntu', sans-serif;
-}
-body {
-    margin:auto;
-}
-header {
-    display: flex;
-    flex-direction: column;
 }
 nav {
     max-width: 100%;
@@ -18,17 +11,17 @@ nav {
     flex-flow: wrap;
     justify-content: space-around;
     background-color: #272727;
-    margin-top: 1px;
-    margin-bottom: 1px;
 }
 .nav {
     color: white;
-    margin: 0 auto;
+    margin:5px auto;
 }
 #jam_pictures {
     display: flex;
     justify-content: space-around;
     max-width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 #servis_and_news {
     display: grid;
@@ -46,7 +39,6 @@ label {
     justify-content: center;
     background: #272727;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
 }
 #servis {
     max-width: 100%;
@@ -61,6 +53,7 @@ label {
 #article_for_servis {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
+    margin: 0 auto;
 }
 @media (max-width: 450px) {
     #article_for_servis {
@@ -72,22 +65,20 @@ label {
     display: grid;
     grid-auto-columns: max-content;
     grid-template: 1fr/1fr;
-    margin: 5px;
 }
 .section_servis {
     display: flex;
     flex-direction: column;
 }
 #news {
-    margin-left: 10px;
+    margin-left: 5px;
     background: white;
 }
 .section_news {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-auto-rows: max-content;
-    margin: 5px auto;
-    padding: 5px;
+    margin: 0 auto;
 }
 #products {
     grid-column-end: span 2;
@@ -127,10 +118,13 @@ p {
     display: flex;
     justify-content: flex-start;
     color: #272727;
+    margin-top: 0 ;
 }
 h3 {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    margin-top: 3px;
 }
 #contact_blok {
     display: grid;
@@ -146,15 +140,42 @@ h3 {
 #contact {
     display: grid;
     grid-template-rows: 1fr 1fr;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
 }
 #icon {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #maps {
     width: 99%;
-    height: 250px;
+    height: 210px;
 }
 article {
-    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    margin-bottom: 5px;
+}
+section#for_adres {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section#time_for_work {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+}
+hr {
+    width: 100%;
+    margin: 2px auto;
+}
+.contact-form {
+    background-color: white;
 }
