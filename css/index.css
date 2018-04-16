@@ -1,9 +1,9 @@
-
 body {
     margin: 0 auto;
     max-width: 1024px;
     min-width: 320px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 nav {
     max-width: 100%;
@@ -15,7 +15,7 @@ nav {
 }
 .nav {
     color: white;
-    margin:5px auto;
+    margin: 5px auto;
 }
 #jam_pictures {
     max-width: 100%;
@@ -40,7 +40,7 @@ label {
     display: flex;
     justify-content: center;
     background: #272727;
-    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 2px;
 }
 #servis {
     max-width: 100%;
@@ -109,8 +109,6 @@ h1 {
     margin: 0 auto;
     max-width: 100%;
     color: white;
-    font-family: 'Ubuntu', sans-serif;
-
 }
 h2 {
     margin: auto;
