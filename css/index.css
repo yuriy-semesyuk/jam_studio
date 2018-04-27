@@ -44,7 +44,7 @@ label {
 }
 #servis {
     max-width: 100%;
-    background: white;
+    box-shadow: grey 0.2em 0.2em 0.2em;
 }
 .img_for_service {
     display: grid;
@@ -67,6 +67,7 @@ label {
     display: grid;
     grid-auto-columns: max-content;
     grid-template: 1fr/1fr;
+    margin: 2px;
 }
 .section_servis {
     display: flex;
