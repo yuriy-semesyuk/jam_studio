@@ -1,5 +1,5 @@
-$(function() {
-    $('#contact-form input[type=submit]').click(sendForm);
+$(function(){
+   $('#contact-form input[type=submit]').click(sendForm);
 });
 
 function sendForm(ev) {
@@ -16,7 +16,7 @@ function sendForm(ev) {
             },
             dataType: "json"
         })
-            .done( () => $('#thank-dialog').attr('open', 'open') )
-    .fail( () => $('#error-dialog').attr('open', 'open') );
+         .done( () => $('#thank-dialog').attr('open', 'open') )
+         .fail( () => $('#error-dialog').attr('open', 'open') );
     }
 }
